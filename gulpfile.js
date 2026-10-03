@@ -49,9 +49,9 @@ gulp.task("webpack", function() {
 });
 
 gulp.task("sass", function() {
-    gulp.src("./source/sass/*.scss")
+    return gulp.src("./source/sass/*.scss")
         .pipe($.plumber())
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest("./dist/css"));
 });
 
