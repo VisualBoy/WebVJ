@@ -299,8 +299,8 @@
 	        _this.pages = [];
 	        _this.page = null;
 
-	        var pathes = ["../dist/captures/wikipedia-en", "../dist/captures/amazon", "../dist/captures/ヤフオク", "../dist/captures/走れメロス", // 文字だけのページ　短めのやつ
-	        "../dist/captures/foursquare"];
+	        var pathes = ["./dist/captures/wikipedia-en", "./dist/captures/amazon", "./dist/captures/ヤフオク", "./dist/captures/走れメロス", // 文字だけのページ　短めのやつ
+	        "./dist/captures/foursquare"];
 
 	        Promise.all(pathes.map(function (path) {
 	            return _this.load(path);
@@ -3539,7 +3539,7 @@
 	        folder.add(_this.polar, "theta0", 0, Math.PI * 0.5).name("θ");
 	        folder.add(_this.polar, "theta1", 0, Math.PI * 2).name("θ'");
 
-	        var pathes = ["../dist/captures/wikipedia-jp", "../dist/captures/github", "../dist/captures/amazon", "../dist/captures/ヤフオク", "../dist/captures/yoppa", "../dist/captures/foursquare"];
+	        var pathes = ["./dist/captures/wikipedia-jp", "./dist/captures/github", "./dist/captures/amazon", "./dist/captures/ヤフオク", "./dist/captures/yoppa", "./dist/captures/foursquare"];
 
 	        Promise.all(pathes.map(function (path) {
 	            return _this.load(path);
@@ -3822,7 +3822,7 @@
 	                fragmentShader: __webpack_require__(68)
 	            });
 
-	            loader.load("../dist/textures/random.png", function (texture) {
+	            loader.load("./dist/textures/random.png", function (texture) {
 	                texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
 	                _this3.rgbShift.uniforms.tNoise.value = texture;
 	            });
@@ -5821,7 +5821,7 @@
 
 	        _this.add(_this.mesh);
 	        _this.models = [];
-	        _this.loadModels(["../dist/textures/Head.png", "../dist/textures/Stickman.png", "../dist/textures/Hand.png", "../dist/textures/Heart.png", "../dist/textures/Chimp.png"]);
+	        _this.loadModels(["./dist/textures/Head.png", "./dist/textures/Stickman.png", "./dist/textures/Hand.png", "./dist/textures/Heart.png", "./dist/textures/Chimp.png"]);
 	        return _this;
 	    }
 
