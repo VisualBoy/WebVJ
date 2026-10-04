@@ -6,7 +6,7 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist/javascripts'),
-    publicPath: '/WebVJ/',
+    publicPath: '',
   },
   module: {
     rules: [
